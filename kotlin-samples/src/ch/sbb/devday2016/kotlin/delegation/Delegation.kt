@@ -1,4 +1,4 @@
-package ch.sbb.devday2106.kotlin.delegation
+package ch.sbb.devday2016.kotlin.delegation
 
 interface Car {
     fun features(): List<String>

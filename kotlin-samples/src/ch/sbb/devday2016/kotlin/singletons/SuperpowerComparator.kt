@@ -1,5 +1,6 @@
-package ch.sbb.devday2106.kotlin.singletons
+package ch.sbb.devday2016.kotlin.singletons
 
+import ch.sbb.devday2016.kotlin.singletons.Superpower.*
 import java.util.*
 
 object SuperpowerComparator : Comparator<Superhero> {
@@ -27,8 +28,10 @@ enum class Gender {
 
 //******************************************************************
 fun main(args: Array<String>) {
-    val superhero1 = Superhero(Gender.ANDROGYNY, "Loki", Superpower.BODY_PART_SUBSTITUTION)
-    val superhero2 = Superhero(Gender.FEMALE, "She-Hulk", Superpower.REGENERATIVE_HEALING)
-    val superhero3 = Superhero(Gender.MALE, "Silver Surfer", Superpower.POWER_MANIPULATION)
+    val superhero1 = Superhero(Gender.FEMALE, "She-Hulk", REGENERATIVE_HEALING)
+    val superhero2 = Superhero(Gender.ANDROGYNY, "Loki", BODY_PART_SUBSTITUTION)
+    val superhero3 = Superhero(Gender.MALE, "Silver Surfer", POWER_MANIPULATION)
     listOf<Superhero>(superhero1, superhero2, superhero3).sortedWith(SuperpowerComparator).forEach { println(it) }
+//    listOf<Superhero>(superhero1, superhero2, superhero3).sortedWith(SuperpowerComparator).forEach { superhero -> println(superhero) }
+
 }

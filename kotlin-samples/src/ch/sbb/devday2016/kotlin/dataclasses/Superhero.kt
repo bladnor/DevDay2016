@@ -6,7 +6,7 @@
  * - Data Klassen brauchen einen Primär Konstruktor mit mindestens einem Parameter
  * - Properties die nicht im Primär Konstruktor deklariert sind, nehmen nicht Teil an equals() und hashCode()
  */
-package ch.sbb.devday2106.kotlin.dataclasses
+package ch.sbb.devday2016.kotlin.dataclasses
 
 data class Superhero(var gender: String, var name: String, var realName: String)
 

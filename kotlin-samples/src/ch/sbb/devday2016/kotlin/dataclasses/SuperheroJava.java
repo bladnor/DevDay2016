@@ -1,4 +1,4 @@
-package ch.sbb.devday2106.kotlin.dataclasses;
+package ch.sbb.devday2016.kotlin.dataclasses;
 
 import java.util.Objects;
 

@@ -1,4 +1,4 @@
-package ch.sbb.devday2106.kotlin.sealedClasses
+package ch.sbb.devday2016.kotlin.sealedClasses
 
 sealed class Shapes {
     class Circle(val radius: Double) : Shapes() {
