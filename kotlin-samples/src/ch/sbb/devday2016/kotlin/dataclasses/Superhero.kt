@@ -9,6 +9,7 @@
 package ch.sbb.devday2016.kotlin.dataclasses
 
 data class Superhero(var gender: String, var name: String, var realName: String)
+//data class Superhero(val gender: String, val name: String, val realName: String)
 
 
 //  ******************************************************************
