@@ -1,5 +1,5 @@
 /**
- * Was es zu wissen gibt
+ * Data Klassen
  *
  * - Bei data Klassen werden automatisch equals(), hashCode(), toString() generiert.
  * - Zusätzlich werden componentN()- und eine copy() function erzeugt
@@ -9,7 +9,6 @@
 package ch.sbb.devday2016.kotlin.dataclasses
 
 data class Superhero(var gender: String, var name: String, var realName: String)
-//data class Superhero(val gender: String, val name: String, val realName: String)
 
 
 //  ******************************************************************
