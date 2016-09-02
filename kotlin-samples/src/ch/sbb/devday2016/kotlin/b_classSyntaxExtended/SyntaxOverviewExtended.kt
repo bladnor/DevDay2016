@@ -1,4 +1,4 @@
-package ch.sbb.devday2016.kotlin.classSyntaxExtended
+package ch.sbb.devday2016.kotlin.b_classSyntaxExtended
 
 /**
  * Functionen in Interfaces können eine Implementation haben

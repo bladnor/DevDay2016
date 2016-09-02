@@ -6,7 +6,7 @@
  * - Data Klassen brauchen einen Primär Konstruktor mit mindestens einem Parameter
  * - Properties die nicht im Primär Konstruktor deklariert sind, nehmen nicht Teil an equals() und hashCode()
  */
-package ch.sbb.devday2016.kotlin.dataclasses
+package ch.sbb.devday2016.kotlin.e_dataclasses
 
 data class Superhero(var gender: String, var name: String, var realName: String)
 
@@ -17,11 +17,20 @@ fun main(args: Array<String>) {
     val hero2 = Superhero("female", "Emma Frost", "Emma Grace Frost")
 
     /** copy function */
+    // TODO rbe: show named parameters
     val hero3 = hero1.copy(name = "Thor", realName = "Thor Odinson")
 
-    /** Destructing Declarations */
+    // TODO rbe: show destructuring declarations with hero3 and regular class
+    Superheroine("Elektra","Elektra Natchios")
+
     val superheroes = mapOf(hero1.name to hero1, hero2.name to hero2, hero3.name to hero3)
     for ((name, hero) in superheroes) {
         println(name.padEnd(20,' ') + ": " + hero)
     }
+}
+
+
+
+
+class Superheroine(val name:String, val realName: String) {
 }

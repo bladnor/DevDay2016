@@ -1,4 +1,4 @@
-package ch.sbb.devday2016.kotlin.ranges
+package ch.sbb.devday2016.kotlin.z_ranges
 
 /**
  * - Ranges sind per default closed. Der letzte Wert gehört dazu.

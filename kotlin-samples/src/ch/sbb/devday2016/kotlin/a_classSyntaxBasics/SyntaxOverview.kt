@@ -1,4 +1,4 @@
-package ch.sbb.devday2016.kotlin.classSyntaxBasics
+package ch.sbb.devday2016.kotlin.a_classSyntaxBasics
 
 /**
  * Syntax einer Klasse
