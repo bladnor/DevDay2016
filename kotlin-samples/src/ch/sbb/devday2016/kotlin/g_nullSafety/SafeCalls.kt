@@ -1,4 +1,4 @@
-package ch.sbb.devday2016.kotlin.nullSafety
+package ch.sbb.devday2016.kotlin.g_nullSafety
 
 class A {
     val b: B? = null
@@ -16,9 +16,8 @@ fun safeCalls() {
     val a: A? = null
 
 
-
-    val cName = a?.b?.c?.name            // ?: ""
-    println(cName)
+    val nameOfC = a?.b?.c?.name            // ?: ""
+    println(nameOfC)
 }
 
 //******************************************************************

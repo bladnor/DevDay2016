@@ -1,4 +1,4 @@
-package ch.sbb.devday2016.kotlin.extensionfunctions
+package ch.sbb.devday2016.kotlin.f_extensionfunctions
 
 import java.text.SimpleDateFormat
 import java.util.Date

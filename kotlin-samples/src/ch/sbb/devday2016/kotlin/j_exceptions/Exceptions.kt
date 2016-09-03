@@ -1,23 +1,5 @@
-package ch.sbb.devday2016.kotlin.exceptions
+package ch.sbb.devday2016.kotlin.j_exceptions
 
-/**
- * - Es gibt keine Checked Exceptions in Kotlin und somit auch keine `throws` clause
- * - `throw` und `try` können in Expressions verwendet werden.
- */
-fun main(args: Array<String>) {
-
-    try {
-//        println("percentage: ${standardThrow(101)}")
-        println("percentage: ${throwAsPartOfExpression(5)}")
-    } catch(e: IllegalArgumentException) {
-        e.printStackTrace()
-    } finally {
-        // do something
-    }
-
-//    println("percentage: ${tryAsPartOfExpression(101)}")
-//    println("percentage: ${tryAsPartOfExpression(10)}")
-}
 
 fun standardThrow(percentage: Int): Int {
     if (percentage !in 1..100) {
@@ -47,4 +29,23 @@ fun tryAsPartOfExpression(value: Int): Int {
     }
 
     return percentage
+}
+
+/**
+ * - Es gibt keine Checked Exceptions in Kotlin und somit auch keine `throws` clause
+ * - `throw` und `try` können in Expressions verwendet werden.
+ */
+fun main(args: Array<String>) {
+
+    try {
+//        println("percentage: ${standardThrow(101)}")
+        println("percentage: ${throwAsPartOfExpression(5)}")
+    } catch(e: IllegalArgumentException) {
+        e.printStackTrace()
+    } finally {
+        // do something
+    }
+
+//    println("percentage: ${tryAsPartOfExpression(101)}")
+//    println("percentage: ${tryAsPartOfExpression(10)}")
 }

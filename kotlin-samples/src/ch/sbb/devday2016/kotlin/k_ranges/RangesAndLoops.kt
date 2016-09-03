@@ -1,16 +1,4 @@
-package ch.sbb.devday2016.kotlin.z_ranges
-
-/**
- * - Ranges sind per default closed. Der letzte Wert gehört dazu.
- * - Für half-closed Ranges kann `until` verwendet werden. Der letzt Wert gehört nicht mehr dazu.
- * - Um rückwarts zu zählen kann `donwTo` verwendet werden.
- */
-fun main(args: Array<String>) {
-//    loopForward()
-    loopForwardHalfClosed()
-//    loopBackward()
-}
-
+package ch.sbb.devday2016.kotlin.k_ranges
 
 fun loopForward() {
     val oneTo10 = 1..10
@@ -37,4 +25,16 @@ fun loopBackward() {
     for (i in 100 downTo 1 step 5) {
         println("i = $i")
     }
+}
+
+
+/**
+ * - Ranges sind per default closed. Der letzte Wert gehört dazu.
+ * - Für half-closed Ranges kann `until` verwendet werden. Der letzt Wert gehört nicht mehr dazu.
+ * - Um rückwarts zu zählen kann `donwTo` verwendet werden.
+ */
+fun main(args: Array<String>) {
+//    loopForward()
+    loopForwardHalfClosed()
+//    loopBackward()
 }

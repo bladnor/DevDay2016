@@ -8,7 +8,7 @@
  * - `this` bezieht sich auf den Receiver
  *
  */
-package ch.sbb.devday2016.kotlin.extensionfunctions
+package ch.sbb.devday2016.kotlin.f_extensionfunctions
 
 fun String.theAnswer(): String {
     return this + " 42"

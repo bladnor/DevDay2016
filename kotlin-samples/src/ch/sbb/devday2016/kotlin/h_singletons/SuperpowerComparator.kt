@@ -1,4 +1,4 @@
-package ch.sbb.devday2016.kotlin.singletons
+package ch.sbb.devday2016.kotlin.h_singletons
 
 import ch.sbb.devday2016.kotlin.Gender
 import ch.sbb.devday2016.kotlin.Gender.*
@@ -12,8 +12,9 @@ object SuperpowerComparator : Comparator<Superhero> {
     }
 }
 
-data class Superhero(var gender: Gender, var name: String, var superpower: Superpower)
 
+
+data class Superhero(var gender: Gender, var name: String, var superpower: Superpower)
 
 //******************************************************************
 fun main(args: Array<String>) {

@@ -1,4 +1,4 @@
-package ch.sbb.devday2016.kotlin.smartcasts
+package ch.sbb.devday2016.kotlin.i_smartcasts
 
 interface Shape {
     fun area(): Double

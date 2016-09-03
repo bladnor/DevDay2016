@@ -1,4 +1,4 @@
-package ch.sbb.devday2016.kotlin.nullSafety
+package ch.sbb.devday2016.kotlin.g_nullSafety
 
 import ch.sbb.devday2016.kotlin.Gender
 import ch.sbb.devday2016.kotlin.Gender.MALE

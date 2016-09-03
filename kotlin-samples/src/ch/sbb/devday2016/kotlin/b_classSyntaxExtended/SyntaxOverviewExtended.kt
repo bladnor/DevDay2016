@@ -1,8 +1,6 @@
 package ch.sbb.devday2016.kotlin.b_classSyntaxExtended
 
-/**
- * Functionen in Interfaces können eine Implementation haben
- */
+// TODO rbe: show interfaces can have implementation / hinweis auf java 6/8
 interface Super {
     fun calculatePower(): Int
     fun currentMood(): String {
@@ -23,13 +21,16 @@ interface Super {
  * @param status Ist eine Variable die verändert werden kann
  * @param firstApperance Für Parameter ohne `val` oder `var` wird kein Property und keine Getter oder Setter erzeugt.
  */
+// TODO rbe: show paramter without val/var
 class Superhero(val name: String, val realName: String = "", var status: String, firstApperance: String) : Super {
     init {
         println(firstApperance)
     }
 
+    // TODO rbe: show named parameter / secondary constructor
     constructor(name: String) : this(name, status = "topfit", firstApperance = "")
 
+    // TODO rbe: show override is keyword
     override fun calculatePower(): Int {
         throw UnsupportedOperationException("not implemented")
     }
@@ -38,8 +39,10 @@ class Superhero(val name: String, val realName: String = "", var status: String,
         return super.currentMood()
     }
 
+    // TODO rbe: show custome setter / getter with backing field
     var createdBy: String = ""
-        get() = "Creator: ".plus(field)
+        // get() = "Creator: ".plus(field)
+        get() = "Creater: "  + createdBy
         set(nameOfCreator) {
             // Custom Setter code kann hier implementiert werden
             field = nameOfCreator
@@ -51,10 +54,14 @@ fun main(args: Array<String>) {
     val flash = Superhero("The Flash", status = "top fit", firstApperance = "1940")  // Calls Primär Konstruktor
     val flash1 = Superhero("The Flash") // Calls Sekundär Konstruktor
 
+    // TODO rbe: show re-assignement to var/val does not work
     flash.status = "verletzt"
 //    flash.realName = "Batmann"
 
     flash.createdBy = "Bill Finger"
+
+    // TODO rbe: show wrong custom getter
+    // println(flash.createdBy)
 
     println(flash)
 }

@@ -1,4 +1,4 @@
-package ch.sbb.devday2016.kotlin.smartcasts
+package ch.sbb.devday2016.kotlin.i_smartcasts
 
 import ch.sbb.devday2016.kotlin.Superpower
 import ch.sbb.devday2016.kotlin.Superpower.*
