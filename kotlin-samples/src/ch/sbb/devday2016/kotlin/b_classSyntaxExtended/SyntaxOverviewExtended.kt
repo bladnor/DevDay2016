@@ -19,7 +19,8 @@ interface Super {
  * @param name Ist ein Value der nicht verändert werden kann
  * @param realName Ist ein Value der nicht verändert werden kann mit einem default Wert
  * @param status Ist eine Variable die verändert werden kann
- * @param firstApperance Für Parameter ohne `val` oder `var` wird kein Property und keine Getter oder Setter erzeugt.
+ * @param firstApperance Für Parameter ohne `val` oder `var` wird kein Property und keine Getter
+ * oder Setter erzeugt.
  */
 // TODO rbe: show paramter without val/var
 class Superhero(val name: String, val realName: String = "", var status: String, firstApperance: String) : Super {
@@ -30,6 +31,16 @@ class Superhero(val name: String, val realName: String = "", var status: String,
     // TODO rbe: show named parameter / secondary constructor
     constructor(name: String) : this(name, status = "topfit", firstApperance = "")
 
+    // TODO rbe: show custom setter / getter with backing field
+    var createdBy: String = ""
+            // get() = "Creator: ".plus(field)
+        get() = "Creater: " + createdBy
+        set(nameOfCreator) {
+            // Custom Setter code kann hier implementiert werden
+            field = nameOfCreator
+        }
+
+
     // TODO rbe: show override is keyword
     override fun calculatePower(): Int {
         throw UnsupportedOperationException("not implemented")
@@ -39,14 +50,6 @@ class Superhero(val name: String, val realName: String = "", var status: String,
         return super.currentMood()
     }
 
-    // TODO rbe: show custome setter / getter with backing field
-    var createdBy: String = ""
-        // get() = "Creator: ".plus(field)
-        get() = "Creater: "  + createdBy
-        set(nameOfCreator) {
-            // Custom Setter code kann hier implementiert werden
-            field = nameOfCreator
-        }
 }
 
 fun main(args: Array<String>) {

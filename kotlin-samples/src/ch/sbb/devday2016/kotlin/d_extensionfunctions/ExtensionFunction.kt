@@ -8,8 +8,9 @@
  * - `this` bezieht sich auf den Receiver
  *
  */
-package ch.sbb.devday2016.kotlin.f_extensionfunctions
+package ch.sbb.devday2016.kotlin.d_extensionfunctions
 
+// TODO rbe: show Extension Function ist prefixed mit dem 'Receiver Type'
 fun String.theAnswer(): String {
     return this + " 42"
 }

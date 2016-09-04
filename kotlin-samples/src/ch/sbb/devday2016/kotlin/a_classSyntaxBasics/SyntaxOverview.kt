@@ -16,21 +16,21 @@ package ch.sbb.devday2016.kotlin.a_classSyntaxBasics
 class Superhero(val name: String, val realName: String = "", var status: String)
 
 /**
- * Basic Top-Level Function
+ * Top-Level Function
  *
  * Funktionen (Methoden) müssen nicht innerhalb Klassen definiert werden.
  */
-// TODO rbe: show expression body / block body / remove type
+// TODO rbe: show expression body / block body / remove type; no semicolons at eol
 fun sum(a: Int, b: Int): Int {
     return a + b
 }
 
+
+
 fun main(args: Array<String>) {
-    // TODO rbe: show construction without new
     val superhero = Superhero("The Flash", "Barry Allen","top fit")
 
     println(superhero)
-    // TODO rbe: show property access
     println(superhero.name)
 
     println(sum(2,3))

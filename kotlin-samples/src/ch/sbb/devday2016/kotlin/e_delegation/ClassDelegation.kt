@@ -1,4 +1,4 @@
-package ch.sbb.devday2016.kotlin.d_delegation
+package ch.sbb.devday2016.kotlin.e_delegation
 
 interface Car {
     fun features(): List<String>
@@ -19,6 +19,14 @@ class StandardCar : Car {
     }
 }
 
+// TODO rbe: show custom setter / getter with backing field
+var createdBy: String = ""
+        // get() = "Creator: ".plus(field)
+    get() = "Creater: " + createdBy
+    set(nameOfCreator) {
+        // Custom Setter code kann hier implementiert werden
+        field = nameOfCreator
+    }
 
 // TODO rbe: show remove by keyword
 class SportCar(val car: Car) : Car by car {
