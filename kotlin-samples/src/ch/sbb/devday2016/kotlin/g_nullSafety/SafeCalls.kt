@@ -15,8 +15,7 @@ class C {
 fun safeCalls() {
     val a: A? = null
 
-
-    val nameOfC = a?.b?.c?.name // ?: ""
+    val nameOfC = a?.b?.c?.name
     println(nameOfC)
 }
 

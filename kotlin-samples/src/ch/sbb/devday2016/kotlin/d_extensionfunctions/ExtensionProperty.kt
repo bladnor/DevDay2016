@@ -4,7 +4,7 @@ import java.text.SimpleDateFormat
 import java.util.Date
 
 /**
- * Extension Property (braucht einen Getter)
+ * Extension Property (braucht explizit einen Getter)
  */
 val Date.DATA_FORMAT_LONG: String get() = "dd.MM.yyyy"
 

@@ -1,8 +1,6 @@
 package ch.sbb.devday2016.kotlin.a_classSyntaxBasics
 
 /**
- * Syntax einer Klasse
- *
  * - Per default ist eine Klasse `final` und `public`
  * - Direkt nach dem Klassen Namen folgt der Primär Konstruktor.
  * - Für Values (val) wird ein Property und ein Getter generiert
@@ -16,12 +14,12 @@ package ch.sbb.devday2016.kotlin.a_classSyntaxBasics
 class Superhero(val name: String, val realName: String = "", var status: String)
 
 /**
- * Top-Level Function
- *
  * Funktionen (Methoden) müssen nicht innerhalb Klassen definiert werden.
  */
 // TODO rbe: show expression body / block body / remove type; no semicolons at eol
-fun sum(a: Int, b: Int) = a + b
+fun sum(a: Int, b: Int): Int {
+    return a + b
+}
 
 
 //***

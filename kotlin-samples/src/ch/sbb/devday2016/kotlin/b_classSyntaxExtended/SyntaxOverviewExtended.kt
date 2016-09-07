@@ -14,12 +14,12 @@ interface Super {
  */
 class Superhero(val name: String, val realName: String = "", var status: String, firstApperance: String) : Super {
     init {
-        println(firstApperance)
+        println("init called '$firstApperance' of $this")
     }
 
     // TODO rbe: show named parameter / secondary constructor
     constructor(name: String) : this(name, status = "topfit", firstApperance = "undef") {
-        println("secondary constructor")
+        println("secondary constructor called of $this")
     }
 
 
@@ -45,7 +45,3 @@ fun main(args: Array<String>) {
     flash.createdBy = "Bill Finger"
     println(flash.createdBy)
 }
-
-
-
-
