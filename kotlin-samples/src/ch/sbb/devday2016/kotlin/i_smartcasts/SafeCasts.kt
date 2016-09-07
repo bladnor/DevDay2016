@@ -13,9 +13,9 @@ data class Superheroine(val name: String, val superpower: Superpower) : Super{
 fun main(args: Array<String>) {
 
     val loki: Super = Superhero("Loki", SHAPE_SHIFTING)
-    val elektra = loki as Superheroine
+    val elektra = loki as? Superheroine
 
-    println(elektra.myFriends())
+    println(elektra?.myFriends())
 
     println(elektra)
 }

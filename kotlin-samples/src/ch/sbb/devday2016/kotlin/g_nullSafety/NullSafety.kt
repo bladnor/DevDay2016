@@ -1,20 +1,19 @@
 package ch.sbb.devday2016.kotlin.g_nullSafety
 
-import ch.sbb.devday2016.kotlin.Gender
-import ch.sbb.devday2016.kotlin.Gender.MALE
-import ch.sbb.devday2016.kotlin.Superpower
-import ch.sbb.devday2016.kotlin.Superpower.FLIGHT
-
-
-data class Superhero(val gender: Gender, val name: String, val superpower: Superpower, val nickName: String)
-
+var nameNullable: String? = null
+var nameNonNullable: String = "abc" //null
 
 fun main(args: Array<String>) {
 
-//    val (g, n, s, nickName) = Superhero(MALE, "Spiderman", FLIGHT)
-//    val nickNameLength1: Int? = nickName?.length;
-//
-//    val nickNameLength2: Int = nickName?.length ?: -1;
+    val lengthA = nameNullable?.length
+    println("Länge: $lengthA")
+
+    // TODO rbe: show Elvis operator
+    val lengthB = nameNullable?.length ?: -1
+    println("Länge: $lengthB")
+
+    val lengthC: Int = nameNonNullable?.length
+    println("Länge zum zweiten $lengthC")
 
 }
 
