@@ -16,7 +16,7 @@ class Square(val edge: Double) : Shape {
     }
 }
 
-// ******************************************************************
+//***
 fun main(args: Array<String>) {
     val shape :Shape = Circle(2.0)
 

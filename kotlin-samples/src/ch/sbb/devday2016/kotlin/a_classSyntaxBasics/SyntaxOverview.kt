@@ -24,14 +24,14 @@ class Superhero(val name: String, val realName: String = "", var status: String)
 fun sum(a: Int, b: Int) = a + b
 
 
-
+//***
 fun main(args: Array<String>) {
-    val superhero = Superhero("The Flash", "Barry Allen","top fit")
+    val superhero = Superhero("The Flash", "Barry Allen", "top fit")
 
     println(superhero)
     println(superhero.name)
 
-    println(sum(2,3))
+    println(sum(2, 3))
 }
 
 

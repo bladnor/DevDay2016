@@ -15,7 +15,7 @@ sealed class Shapes {
 }
 
 
-// ******************************************************************
+//***
 fun main(args: Array<String>) {
     val shape: Shapes = Shapes.Circle(1.0)
 

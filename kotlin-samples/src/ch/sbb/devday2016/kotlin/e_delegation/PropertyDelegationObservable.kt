@@ -11,6 +11,7 @@ class MyModel(myDatabase: MutableSet<String>) {
 }
 
 
+//***
 fun main(args: Array<String>) {
     val model= MyModel(mutableSetOf())
     println(model.name)

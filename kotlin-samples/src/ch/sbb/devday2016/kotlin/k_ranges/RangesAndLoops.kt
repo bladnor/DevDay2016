@@ -1,5 +1,10 @@
 package ch.sbb.devday2016.kotlin.k_ranges
 
+/**
+ * - Ranges sind per default closed. Der letzte Wert gehört dazu.
+ * - Für half-closed Ranges kann `until` verwendet werden. Der letzt Wert gehört nicht mehr dazu.
+ * - Um rückwarts zu zählen kann `donwTo` verwendet werden.
+ */
 fun loopForward() {
     val oneTo10 = 1..10
     for (i in oneTo10) {
@@ -28,11 +33,7 @@ fun loopBackward() {
 }
 
 
-/**
- * - Ranges sind per default closed. Der letzte Wert gehört dazu.
- * - Für half-closed Ranges kann `until` verwendet werden. Der letzt Wert gehört nicht mehr dazu.
- * - Um rückwarts zu zählen kann `donwTo` verwendet werden.
- */
+//***
 fun main(args: Array<String>) {
 //    loopForward()
     loopForwardHalfClosed()

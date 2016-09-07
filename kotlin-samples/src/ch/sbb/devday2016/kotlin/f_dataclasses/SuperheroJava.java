@@ -2,9 +2,6 @@ package ch.sbb.devday2016.kotlin.f_dataclasses;
 
 import java.util.Objects;
 
-/**
- * @author rb
- */
 class SuperheroJava {
 
     private String gender;

@@ -5,7 +5,7 @@ class A {
 }
 
 class B {
-    val c: C? =null
+    val c: C? = null
 }
 
 class C {
@@ -16,11 +16,11 @@ fun safeCalls() {
     val a: A? = null
 
 
-    val nameOfC = a?.b?.c?.name            // ?: ""
+    val nameOfC = a?.b?.c?.name // ?: ""
     println(nameOfC)
 }
 
-//******************************************************************
+//***
 fun main(args: Array<String>) {
     safeCalls()
 }

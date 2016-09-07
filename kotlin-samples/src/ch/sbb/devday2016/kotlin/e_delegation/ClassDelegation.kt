@@ -32,7 +32,7 @@ class SportCar(val car: Car) : Car  by car{
 }
 
 
-// ******************************************************************
+//***
 fun main(args: Array<String>) {
     println(StandardCar())
     println(SportCar(StandardCar()))

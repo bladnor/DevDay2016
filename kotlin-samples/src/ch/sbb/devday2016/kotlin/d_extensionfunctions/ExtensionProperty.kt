@@ -18,7 +18,7 @@ fun Date.formatDate(): String {
 
 
 
-//  ******************************************************************
+//***
 fun main(args: Array<String>) {
     val date = Date()
     println(date.formatDate())

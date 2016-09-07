@@ -1,6 +1,9 @@
 package ch.sbb.devday2016.kotlin.j_exceptions
 
-
+/**
+ * - Es gibt keine Checked Exceptions in Kotlin und somit auch keine `throws` clause
+ * - `throw` und `try` sowie auch `if` können in Expressions verwendet werden.
+ */
 fun standardThrow(percentage: Int): Int {
     if (percentage !in 1..100) {
         throw IllegalArgumentException("Wert muss zwischen 1 und 100 liegen. Ist aber '$percentage'")
@@ -31,10 +34,7 @@ fun tryAsPartOfExpression(value: Int): Int {
     return percentage
 }
 
-/**
- * - Es gibt keine Checked Exceptions in Kotlin und somit auch keine `throws` clause
- * - `throw` und `try` können in Expressions verwendet werden.
- */
+//***
 fun main(args: Array<String>) {
 
     try {

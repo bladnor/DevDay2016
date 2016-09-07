@@ -19,7 +19,7 @@ fun String.theQuestion() = this + "the ultimate question of life the universe an
 
 
 
-//  ******************************************************************
+//***
 fun main(args: Array<String>) {
     println("What is the answer to ".theQuestion().theAnswer())
 }

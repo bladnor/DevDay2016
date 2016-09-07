@@ -11,6 +11,7 @@ fun expressionInCurlyBraces() {
     println("die länge von $s beträgt ${s.length}")
 }
 
+//***
 fun main(args: Array<String>) {
     simpleName()
     expressionInCurlyBraces()
