@@ -15,7 +15,9 @@ fun String.theAnswer(): String {
     return this + " 42"
 }
 
-fun String.theQuestion() = this + "the ultimate question of life the universe and everything?"
+fun String.theQuestion(): String {
+    return this + "the ultimate question of life the universe and everything?"
+}
 
 
 

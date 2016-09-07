@@ -8,7 +8,7 @@ fun simpleName() {
 
 fun expressionInCurlyBraces() {
     val s = "abc"
-    println("die länge von $s beträgt ${s.length}")
+    println("die länge von $s beträgt $s.length")
 }
 
 //***

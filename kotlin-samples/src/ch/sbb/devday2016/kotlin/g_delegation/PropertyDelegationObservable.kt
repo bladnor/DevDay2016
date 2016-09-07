@@ -1,4 +1,4 @@
-package ch.sbb.devday2016.kotlin.e_delegation
+package ch.sbb.devday2016.kotlin.g_delegation
 
 import kotlin.properties.Delegates
 

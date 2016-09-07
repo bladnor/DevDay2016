@@ -10,12 +10,6 @@ fun loopForward() {
     for (i in oneTo10) {
         println("i = $i")
     }
-
-//    val aTOz = 'a'..'z'
-//    for (i in oneTo10.plus(aTOz)) {
-//        println("i = $i")
-//    }
-
 }
 
 
@@ -35,7 +29,7 @@ fun loopBackward() {
 
 //***
 fun main(args: Array<String>) {
-//    loopForward()
+    loopForward()
     loopForwardHalfClosed()
-//    loopBackward()
+    loopBackward()
 }
